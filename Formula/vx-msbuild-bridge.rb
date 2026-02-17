@@ -1,25 +1,25 @@
 class VxMsbuildBridge < Formula
-  desc "Minimal MSBuild.exe bridge that delegates to dotnet msbuild - used by vx MSVC provider"
+  desc "MSBuild.exe bridge that delegates to system VS MSBuild with Spectre auto-detection - used by vx MSVC provider"
   homepage "https://github.com/loonghao/vx"
-  version "0.8.0"
+  version "0.8.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/loonghao/vx/releases/download/v0.8.0/vx-msbuild-bridge-aarch64-apple-darwin.tar.gz"
-      sha256 "2abe3bc1af59e7354d38a48cda7ca70495dcd59b4d44fd6330af21cd4d6698f0"
+      url "https://github.com/loonghao/vx/releases/download/v0.8.1/vx-msbuild-bridge-aarch64-apple-darwin.tar.gz"
+      sha256 "a3c98f57f1134bfea73df168ed140f8359e951a9791b4457d31ceacbd4f98b09"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/loonghao/vx/releases/download/v0.8.0/vx-msbuild-bridge-x86_64-apple-darwin.tar.gz"
-      sha256 "c93098805022732825358deb2c5658e3b60cac03801c58b3f5d08a6a7e2fa9c3"
+      url "https://github.com/loonghao/vx/releases/download/v0.8.1/vx-msbuild-bridge-x86_64-apple-darwin.tar.gz"
+      sha256 "0c2a9b3911ac9ce5581280c632e87194ce126a7c2139afec4f72ed03aa5320cc"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/loonghao/vx/releases/download/v0.8.0/vx-msbuild-bridge-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d102b22c0be49c94e83484215cbb64f5a10a9c41d189e9c58ed8f010da91c92b"
+      url "https://github.com/loonghao/vx/releases/download/v0.8.1/vx-msbuild-bridge-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "079b277464353582b4d45e7e3485a3f91a45e6e263a69f674c474a5da13395ac"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/loonghao/vx/releases/download/v0.8.0/vx-msbuild-bridge-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "727dc73adc4c05d736f0c711ac0c6488001b4bab6afdb7c72813e8205d6b7a73"
+      url "https://github.com/loonghao/vx/releases/download/v0.8.1/vx-msbuild-bridge-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8a5edeb4d80340aad8c2d05c2470d4bd8503d9ca6e8857219215deccd47cef0f"
     end
   end
   license "MIT"
