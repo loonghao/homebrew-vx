@@ -1,25 +1,25 @@
 class VxMsbuildBridge < Formula
   desc "MSBuild.exe bridge that delegates to system VS MSBuild with Spectre auto-detection - used by vx MSVC provider"
   homepage "https://github.com/loonghao/vx"
-  version "0.8.7"
+  version "0.8.8"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/loonghao/vx/releases/download/v0.8.7/vx-msbuild-bridge-aarch64-apple-darwin.tar.gz"
-      sha256 "f2fb6157fb49ee8180ee543eff24f41e73cebd6283a56ada8abae03d9bda5251"
+      url "https://github.com/loonghao/vx/releases/download/v0.8.8/vx-msbuild-bridge-aarch64-apple-darwin.tar.gz"
+      sha256 "d9d1135efcac54cfbd862109d43a6f73e250b5cd5d9e01e21a3a0ac060fe9719"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/loonghao/vx/releases/download/v0.8.7/vx-msbuild-bridge-x86_64-apple-darwin.tar.gz"
-      sha256 "d26c55620badb0b88e807185fd4a2ddf2ee85e518882bc5e510da35af4c75575"
+      url "https://github.com/loonghao/vx/releases/download/v0.8.8/vx-msbuild-bridge-x86_64-apple-darwin.tar.gz"
+      sha256 "67b6b217451bfb1b6298ecd70a4bda0f25effc7af26c5c2f8840ee68b53cfb59"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/loonghao/vx/releases/download/v0.8.7/vx-msbuild-bridge-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5f97a3be96317edbd95c219543b4650808dae80c6ee219d71324898d3c7dc522"
+      url "https://github.com/loonghao/vx/releases/download/v0.8.8/vx-msbuild-bridge-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d30db7f46cba932f01f47c21ca81522fa9eafd363ec5fe596a7621951efc3115"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/loonghao/vx/releases/download/v0.8.7/vx-msbuild-bridge-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6110e76b019171f632570bb4fe97cd2b211810fbbd3c60652fc1e86903034f60"
+      url "https://github.com/loonghao/vx/releases/download/v0.8.8/vx-msbuild-bridge-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "e1c3ddea2a3263b2ad1b50b9c8359e89c6075d55fac0d9f5d6188ea5ee070e84"
     end
   end
   license "MIT"
