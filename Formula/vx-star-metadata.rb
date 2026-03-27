@@ -1,25 +1,25 @@
 class VxStarMetadata < Formula
   desc "Zero-dependency static metadata parser for provider.star files"
   homepage "https://github.com/loonghao/vx"
-  version "0.8.8"
+  version "0.8.9"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/loonghao/vx/releases/download/v0.8.8/vx-star-metadata-aarch64-apple-darwin.tar.gz"
-      sha256 "3c9e91adba32787f1a71dde8bcfa63340652deb2b0b249044b16dafa7c3884a8"
+      url "https://github.com/loonghao/vx/releases/download/v0.8.9/vx-star-metadata-aarch64-apple-darwin.tar.gz"
+      sha256 "95addc025b56f7bc6b5e8d4775a1e493ca543f9b2285a55e2fb1e26cb642d1bc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/loonghao/vx/releases/download/v0.8.8/vx-star-metadata-x86_64-apple-darwin.tar.gz"
-      sha256 "c64b4dc6f0c11b08f6a72f1d1030b6fcf20fa04cf01496a9f74963aff7cb828d"
+      url "https://github.com/loonghao/vx/releases/download/v0.8.9/vx-star-metadata-x86_64-apple-darwin.tar.gz"
+      sha256 "2046cd927b9b6f8b085066d55533f78fc5df3ab5fc49262f6f781ba1d40276d0"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/loonghao/vx/releases/download/v0.8.8/vx-star-metadata-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "897a585712a7a728db7d044651f316caf25163415e9ab4d13b327085e91b770f"
+      url "https://github.com/loonghao/vx/releases/download/v0.8.9/vx-star-metadata-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "caec98b77604f2f97a196e0e27579221606f57d1efda75678e68b0859c5604ba"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/loonghao/vx/releases/download/v0.8.8/vx-star-metadata-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "20fed6ca4fcac322d6dd29ba0d7fb9d6904fc97bf632fe6c2c3d582eae3c7df3"
+      url "https://github.com/loonghao/vx/releases/download/v0.8.9/vx-star-metadata-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "bb14a4440dfb65fce943d5980ee8cd547b705f45c49769dc3cac8b9d55bc01b1"
     end
   end
   license "MIT"
