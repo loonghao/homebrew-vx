@@ -4,8 +4,8 @@ class VxStarMetadata < Formula
   version "0.8.10"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/loonghao/vx/releases/download/v0.8.10/vx-star-metadata-aarch64-apple-darwin.tar.gz"
-      sha256 "baf71e122a7781cc621927ed0b5859b73d3300488d069a6149f00cd73ba89184"
+      url "https://github.com/loonghao/vx/archive/refs/tags/v0.8.15.tar.gz"
+      sha256 "79631b0843a0efed78dde5f331883127711188f07ecf6348679f5ecb7b17b6a9"
     end
     if Hardware::CPU.intel?
       url "https://github.com/loonghao/vx/releases/download/v0.8.10/vx-star-metadata-x86_64-apple-darwin.tar.gz"
