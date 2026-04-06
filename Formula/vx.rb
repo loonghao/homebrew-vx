@@ -4,8 +4,8 @@ class Vx < Formula
   version "0.8.19"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/loonghao/vx/releases/download/v0.8.19/vx-aarch64-apple-darwin.tar.gz"
-      sha256 "da795d240897bfdf15630d9e1cf82abdcfca594621a006fafec4eb16e2dc203a"
+      url "https://github.com/loonghao/vx/archive/refs/tags/v0.8.20.tar.gz"
+      sha256 "282117cad0d1bc32612d3d9b7ad095b142b083dc8e56594bd6997eff1dfccef3"
     end
     if Hardware::CPU.intel?
       url "https://github.com/loonghao/vx/releases/download/v0.8.19/vx-x86_64-apple-darwin.tar.gz"
