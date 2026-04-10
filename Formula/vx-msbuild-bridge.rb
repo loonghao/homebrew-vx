@@ -4,8 +4,8 @@ class VxMsbuildBridge < Formula
   version "0.8.9"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/loonghao/vx/archive/refs/tags/v0.8.20.tar.gz"
-      sha256 "282117cad0d1bc32612d3d9b7ad095b142b083dc8e56594bd6997eff1dfccef3"
+      url "https://github.com/loonghao/vx/archive/refs/tags/v0.8.25.tar.gz"
+      sha256 "d37ff0cb31bd024e9b8d55edf868d424a3e2ac4461312a73086d9849a3d479b9"
     end
     if Hardware::CPU.intel?
       url "https://github.com/loonghao/vx/releases/download/v0.8.9/vx-msbuild-bridge-x86_64-apple-darwin.tar.gz"
