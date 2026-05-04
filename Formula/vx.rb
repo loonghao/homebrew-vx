@@ -1,25 +1,25 @@
 class Vx < Formula
   desc "Universal Development Tool Manager"
   homepage "https://github.com/loonghao/vx"
-  version "0.8.35"
+  version "0.8.36"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/loonghao/vx/releases/download/v0.8.35/vx-aarch64-apple-darwin.tar.gz"
-      sha256 "aee6204659f14be018fa8345447bf6d0cf29d3eadc1a110f262c35049e65c38a"
+      url "https://github.com/loonghao/vx/releases/download/v0.8.36/vx-aarch64-apple-darwin.tar.gz"
+      sha256 "c0b40c5df572e8afcddbc94d4ac057bac53f54cf7aee80e8e770592b00230e38"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/loonghao/vx/releases/download/v0.8.35/vx-x86_64-apple-darwin.tar.gz"
-      sha256 "9601d5d4b9dae642884141e4ac80d7493daa32f6f01a0c02499ae87856bd462d"
+      url "https://github.com/loonghao/vx/releases/download/v0.8.36/vx-x86_64-apple-darwin.tar.gz"
+      sha256 "75b714c470b7257bfc233461800756ec7b0972334db222784a5704f358530425"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/loonghao/vx/releases/download/v0.8.35/vx-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "80430ae8126b26bdd11c2901f9b6e94cad111f64f5abf6b6802585dd71a7147f"
+      url "https://github.com/loonghao/vx/releases/download/v0.8.36/vx-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "2850c2648a0cca78438c7088bfb0c53e0a4dbe47352d3fe8a9c6854d821f1423"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/loonghao/vx/releases/download/v0.8.35/vx-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d3a22014f331f5d87444e2940f06954c3c2f0e247797a1d5f829f6d9d41b351c"
+      url "https://github.com/loonghao/vx/releases/download/v0.8.36/vx-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6be88ea798fefb3e88c2880940fc2eb67f655751c9795a41c58da3181de8f23a"
     end
   end
   license "MIT"
