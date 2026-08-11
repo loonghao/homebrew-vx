@@ -1,25 +1,25 @@
 class Vx < Formula
   desc "Universal Development Tool Manager"
   homepage "https://github.com/loonghao/vx"
-  version "0.9.27"
+  version "0.9.28"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/loonghao/vx/releases/download/v0.9.27/vx-aarch64-apple-darwin.tar.gz"
-      sha256 "b64e6c5c21aa8f07be4a967d0aa75e696ed482336ffd52025e3d1c6f8204e584"
+      url "https://github.com/loonghao/vx/releases/download/v0.9.28/vx-aarch64-apple-darwin.tar.gz"
+      sha256 "f3f26421eba3665d1dd79fd9c810598892c30c8aba40d211ea2c08f5dbae001e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/loonghao/vx/releases/download/v0.9.27/vx-x86_64-apple-darwin.tar.gz"
-      sha256 "e4c49c8658e8757f12b44218330bc0b5f3a41374007a4478267f6df36e3f45ea"
+      url "https://github.com/loonghao/vx/releases/download/v0.9.28/vx-x86_64-apple-darwin.tar.gz"
+      sha256 "280bc9479100e94863585ade42677abfd2d5e14bd2600c84cc7ce0e4337f12a2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/loonghao/vx/releases/download/v0.9.27/vx-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "a53054f0747512f8ce414e073e7a8399a1908e136b0ffd8b9984ee7a39024d25"
+      url "https://github.com/loonghao/vx/releases/download/v0.9.28/vx-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "4d5a28ea039f53bfad1e3d0613d3e8436d40dc7ab5461b8e05f4e45fe9510022"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/loonghao/vx/releases/download/v0.9.27/vx-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "af9e55153e968a0eee7cfb6598bb200014ce397ea60e6be3d661a813b3aee68c"
+      url "https://github.com/loonghao/vx/releases/download/v0.9.28/vx-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "46d460d586a382991a3f1f64cd75522dd2cf89eeb3ab635bb589f4231a615e9c"
     end
   end
   license "MIT"
@@ -52,10 +52,18 @@ class Vx < Formula
   end
 
   def install
-    bin.install "vx" if OS.mac? && Hardware::CPU.arm?
-    bin.install "vx" if OS.mac? && Hardware::CPU.intel?
-    bin.install "vx" if OS.linux? && Hardware::CPU.arm?
-    bin.install "vx" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "vx"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "vx"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "vx"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "vx"
+    end
 
     install_binary_aliases!
 
